@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Navigation from "./components/navigation/Navigation";
 import ShopList from "./components/shop-list/ShopList";
