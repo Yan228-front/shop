@@ -1,23 +1,27 @@
+import apple from "./photo/apple.jpg";
+import banan from "./photo/banan.jpg";
+import papaya from "./photo/papaya.jpeg";
+
 export const products = [
   {
     id: 0,
     name: "banana",
     price: 10,
-    url: "http://www.lookmi.ru/nature/banan.jpg",
+    url: banan,
   },
 
   {
     id: 1,
     name: "apple",
     price: 8,
-    url: "https://klike.net/uploads/posts/2019-06/1561279259_1.jpg",
+    url: apple,
   },
 
   {
     id: 2,
     name: "papaya",
     price: 10,
-    url: "https://dnipro.freshmart.com.ua/storage/web/cache/product/99/papaya.jpeg?w=912&h=690&fit=resize&q=80&fm=pjpg&t=1602663860&s=9f168d0deb8f516547e878c52743f74c",
+    url: papaya,
   },
 ];
 
