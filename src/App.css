@@ -1,0 +1,37 @@
+/* li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a.active {
+  color: #c93756;
+}
+
+.button {
+  cursor: pointer;
+  position: relative;
+  margin-top: 10px;
+  width: 100%;
+  padding: 9px 0;
+  background-color: transparent;
+  border: 1px solid #c93756;
+  border-radius: 3rem;
+  color: #c93756;
+  font-size: 14px;
+  font-weight: 600;
+}
+.button:hover {
+  background-color: #c93756;
+  color: #fff;
+}
+
+.app {
+  border-radius: 20px;
+  background-color: #fff;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 35px;
+} */
