@@ -1,5 +1,6 @@
 const ShopListItem = ({ product }) => {
   const { name, price, url } = product;
+
   return (
     <div className='shop-list-item'>
       <div className='shop-list-item__header'>
@@ -13,7 +14,13 @@ const ShopListItem = ({ product }) => {
         <h3 className='shop-list-item__content'>{name}</h3>
       </div>
       <div className='shop-list-item__description'>
-        <span className='shop-list-item__price'>Цена: {`${price}$`}</span>
+        {name === "papaya" ? (
+          <span className='shop-list-item__price'>
+            Цена: {`${price}$ (скидка 5$ за каждую 3 единицу товара) `}
+          </span>
+        ) : (
+          <span className='shop-list-item__price'>Цена: {`${price}$`}</span>
+        )}
       </div>
       <button className='button'>Купить</button>
     </div>

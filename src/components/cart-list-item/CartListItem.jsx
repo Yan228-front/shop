@@ -3,9 +3,12 @@ const CartListItem = ({
   addProductInCart,
   removeProductFromCart,
   deletePurchasedProduct,
+  discount,
 }) => {
-  const { name, url, count, totalPrice, id } = cart;
-
+  let { name, url, count, totalPrice, id } = cart;
+  if (name === "papaya" && count > 2) {
+    totalPrice -= discount;
+  }
   return (
     <div className='cart-list-item'>
       <div className='cart-list-item__header'>
@@ -26,7 +29,7 @@ const CartListItem = ({
           -
         </button>
       </div>
-      <span className='cart-list-item__total-price'>{totalPrice}</span>
+      <span className='cart-list-item__total-price'>{`Цена: ${totalPrice}$`}</span>
       <button
         className='cart-list-item__delete'
         onClick={() => deletePurchasedProduct(id)}

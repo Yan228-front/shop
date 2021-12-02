@@ -1,5 +1,4 @@
 import CartListItem from "../cart-list-item/CartListItem";
-import { useState } from "react";
 
 const CartList = ({
   cartList,
@@ -18,7 +17,6 @@ const CartList = ({
           sum += cart.totalPrice;
 
           if (cart.name === "papaya" && cart.count > 2) {
-            debugger;
             if (cart.count % 3 === 0) {
               discount = (cart.count / 3) * 5;
             } else if (cart.count % 3 === 1) {
@@ -26,6 +24,9 @@ const CartList = ({
             } else if (cart.count % 3 === 2) {
               discount = ((cart.count - 2) / 3) * 5;
             }
+          }
+          if (cart.count < 3) {
+            discount = 0;
           }
 
           return (
@@ -36,6 +37,7 @@ const CartList = ({
                   addProductInCart={addProductInCart}
                   removeProductFromCart={removeProductFromCart}
                   deletePurchasedProduct={deletePurchasedProduct}
+                  discount={discount}
                 />
               </li>
             </div>

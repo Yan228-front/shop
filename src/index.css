@@ -82,6 +82,9 @@ img.shop-list-item__name {
   background-color: #c93756;
   color: #fff;
 }
+.button:focus {
+  color: black;
+}
 
 .navigation {
   padding: 10px;
