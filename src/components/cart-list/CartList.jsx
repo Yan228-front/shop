@@ -13,6 +13,7 @@ const CartList = ({
     <div>
       <ul className='cart-list'>
         {cartList.map((cart) => {
+          debugger;
           const { id } = cart;
           sum += cart.totalPrice;
 
